@@ -1,0 +1,164 @@
+[{
+  "_id": {
+    "$oid": "607e96110000dd3e4831575b"
+  },
+  "bizName": "Koko cakes",
+  "bizDescription": "shop that sell cakes from banana!",
+  "bizAddress": "zoo ramatgan",
+  "bizPhone": "99999",
+  "bizImage": "",
+  "bizNumber": 11111
+},{
+  "_id": {
+    "$oid": "607eab7e6da66640144b8e65"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T10:20:36.670Z"
+  },
+  "bizName": "Hacker u",
+  "bizDescription": "High tech college",
+  "bizAddress": "shoam 5 ramatgan",
+  "bizPhone": "99999",
+  "user_id": "607e73881f75122640f05a0f",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607eb0d66e30531810b48014"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T10:45:28.663Z"
+  },
+  "bizName": "Trump silver tower",
+  "bizDescription": "Tower from fake silver",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607e73881f75122640f05a0f",
+  "bizNumber": 72458,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607eb8bf0931002e08af30e0"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:10:58.269Z"
+  },
+  "bizName": "Trump silver tower",
+  "bizDescription": "Tower from fake silver",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607e73881f75122640f05a0f",
+  "bizNumber": 698728,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607ec21309f7b6459cd95da6"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:58:32.499Z"
+  },
+  "bizName": "Trump tower 2",
+  "bizDescription": "Tower from fake gold",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607eb6f70931002e08af30df",
+  "bizNumber": 789062,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607ec21709f7b6459cd95da7"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:58:32.499Z"
+  },
+  "bizName": "Trump tower 6",
+  "bizDescription": "Tower from fake gold",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607eb6f70931002e08af30df",
+  "bizNumber": 187656,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607ec21b09f7b6459cd95da8"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:58:32.499Z"
+  },
+  "bizName": "Trump tower 8",
+  "bizDescription": "Tower from fake gold",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607eb6f70931002e08af30df",
+  "bizNumber": 92196,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607ec2bf09f7b6459cd95da9"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:58:32.499Z"
+  },
+  "bizName": "Trump tower 999",
+  "bizDescription": "Tower from fake gold",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607eb6f70931002e08af30df",
+  "bizNumber": 132512,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607ec32209f7b6459cd95daa"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:58:32.499Z"
+  },
+  "bizName": "Empire state",
+  "bizDescription": "Tower in new york",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607eb6f70931002e08af30df",
+  "bizNumber": 21060,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607ec33c09f7b6459cd95dab"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:58:32.499Z"
+  },
+  "bizName": "Pizza koko",
+  "bizDescription": "The best pizza store ever",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "99999",
+  "user_id": "607eb6f70931002e08af30df",
+  "bizNumber": 624873,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60812217c661f80f50a0888e"
+  },
+  "createdAt": {
+    "$date": "2021-04-22T07:11:38.451Z"
+  },
+  "bizName": "Obama water ski",
+  "bizDescription": "Fun ski water with obama!",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "999992231",
+  "user_id": "607e73881f75122640f05a0f",
+  "bizNumber": 353605,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60816fc9118d19386c81ba9c"
+  },
+  "createdAt": {
+    "$date": "2021-04-22T10:18:41.327Z"
+  },
+  "bizName": "Mishel water ski",
+  "bizDescription": "Fun ski water with Moshel!",
+  "bizAddress": "New york somewhere",
+  "bizPhone": "999992231",
+  "user_id": "607e73881f75122640f05a0f",
+  "bizNumber": 299886,
+  "__v": 0
+}]

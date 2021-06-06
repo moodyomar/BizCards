@@ -1,0 +1,95 @@
+[{
+  "_id": {
+    "$oid": "607beb3e9e192646ec7412fb"
+  },
+  "createdAt": {
+    "$date": "2021-04-18T08:16:06.744Z"
+  },
+  "name": "koko akof",
+  "email": "koko@walla.com",
+  "password": "$2b$10$QXH7f/CSsz.fjkUxCwJEHefyXDZDkH4v6oYXPfE3bkJwPPaVd.nzO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607bee5d9e192646ec7412fd"
+  },
+  "createdAt": {
+    "$date": "2021-04-18T08:16:06.744Z"
+  },
+  "name": "jack",
+  "email": "jack@walla.com",
+  "password": "$2b$10$XZeHtCCBUW9vSOeAppQZeurmZuzPrDCbtxoq7BKhxhfhY8iBKgXpu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607befe80331a51be8720f10"
+  },
+  "createdAt": {
+    "$date": "2021-04-18T08:37:36.268Z"
+  },
+  "name": "bravo",
+  "email": "bravo@walla.com",
+  "password": "$2b$10$8xQ1Rl8Hk9SS9r3/s.hVwO/8TaFd/d02o57G8VrCjRpcde80Jjrom",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607e73881f75122640f05a0f"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T06:21:46.011Z"
+  },
+  "name": "biden",
+  "email": "biden@walla.com",
+  "password": "$2b$10$uYOk7vOStlJgBbDtEAhZG.ZZgoO9L1oYihlHg/r2sPzRE601024Ua",
+  "__v": 0,
+  "cards": [
+    "624873",
+    "21060",
+    "132512",
+    "299886"
+  ]
+},{
+  "_id": {
+    "$oid": "607e739bb4a3393f5c48aea8"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T06:24:20.058Z"
+  },
+  "name": "biden",
+  "email": "biden2@walla.com",
+  "password": "$2b$10$lu7G84.uy0liVmVPX9Gbg.Bo8qwqBhcWKSqQEfN/Q.nrcibBZn/h2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607e777f1219b1314cfc8202"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T06:40:52.225Z"
+  },
+  "name": "biden",
+  "email": "biden3@walla.com",
+  "password": "$2b$10$uA3UqdK3k9Ga510hqL73Se3lVCnjjXvxs7EAHL53XxEcd/gSpaqqi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607eb6f70931002e08af30df"
+  },
+  "createdAt": {
+    "$date": "2021-04-20T11:10:58.265Z"
+  },
+  "name": "trump",
+  "email": "trump@walla.com",
+  "password": "$2b$10$k0d9i55JV6ETtH6u7UNqxeqphrjZ4dvZ4pIaV9j8wAppav5yG36LS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60811851bda3f7361c03d2c9"
+  },
+  "createdAt": {
+    "$date": "2021-04-22T06:25:04.524Z"
+  },
+  "name": "obama",
+  "email": "obama@walla.com",
+  "password": "$2b$10$sgK5iCJnTt.QLYs4uWyr2OMPmE20PEmODyax9TbFLZsT1y4zmhgH2",
+  "__v": 0
+}]
