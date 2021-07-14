@@ -5,18 +5,14 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    let perPage = (req.query.perPage) ? Number(req.query.perPage) : 5;
+    let perPage = (req.query.perPage) ? Number(req.query.perPage) : 6;
     let page = (req.query.page) ? Number(req.query.page) : 0;
-    // מגדיר לפי מה למיין
     let sort = (req.query.sort) ? req.query.sort : "_id";
-    // מגדיר שאם מקבל ריוורס ייס יציג מהגדול לקטן ואם לא הפוך
     let reverse = (req.query.reverse == "yes") ? -1 : 1;
     let data = await CardModel.find({})
       .limit(perPage)
       .skip(page * perPage)
-      // [sort] -> מביא את הקיי שהוא בתוך המשתנה של סורט ולא את הקיי סורט
       .sort({ [sort]: reverse });
-    // .sort({_id:-1}) // ידאג שהרשומה האחרונה תוצג ראשונה
     res.json(data);
   }
   catch (err) {
