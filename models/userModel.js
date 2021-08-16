@@ -11,14 +11,11 @@ const userSchema = new mongoose.Schema({
   createdAt: {
     type: Date, default: Date.now()
   },
-  // הולך לשמור בתוך המאפיין קארדס את כל הכרטיסים שהמשתמש עשה להם
-  //  פייבוריט
   cards: Array
 });
 
 exports.UserModel = mongoose.model("users", userSchema);
 
-// מייצר טוקן 
 exports.getToken = (_userId) => {
   let token = jwt.sign({ _id: _userId }, config.jwtSecret, { expiresIn: "60mins" });
   return token;

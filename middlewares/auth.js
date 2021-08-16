@@ -11,11 +11,8 @@ exports.authToken = (req,res,next) => {
   }
   try{
     let decodeToken = jwt.verify(validToken,config.jwtSecret);
-    // אנחנו מעבירים לריק את המשתנה כמאפיין
-    // כדי שהפונקציות הבאות בשרשור של הראוט
-    // יוכלו לקבל את המידע במקרה הזה האיי די של המשתמש
     req.tokenData = decodeToken;
-    // הכל טוב אפשר לעבור לפונקציה הבאה
+
     next();
   }
   catch(err){
@@ -24,7 +21,7 @@ exports.authToken = (req,res,next) => {
   }
 }
 
-// מידל וואר שבדוק שהמשתמש הוא עסק
+
 exports.checkIfBiz = async(req, res, next) => {
   try {
     let user = await UserModel.findOne({ _id:req.tokenData._id, biz: true });

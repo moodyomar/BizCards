@@ -30,7 +30,7 @@ exports.validCard = (_dataBody) => {
   return joiSchema.validate(_dataBody)
 }
 
-// מייצר מספר רנדומלי ובודק שלא קיים ולא שייך לעסק אחר בקולקשן
+
 exports.genBizNumber = async(CardModel) => {
   while(true){
     let randomNum = random(1,999999);

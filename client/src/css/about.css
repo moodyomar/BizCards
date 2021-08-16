@@ -1,0 +1,11 @@
+p{
+  padding: 30px;
+}
+.headingImage{
+/* background-image: url('/images/whatwedo.png'); */
+background-size: cover;
+background-position: center;
+height: 200px;
+width: 250px;
+
+}

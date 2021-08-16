@@ -1,0 +1,2 @@
+header .burger{display:none}header a{color:#333;padding:0 12px;text-decoration:none}@media (max-width:991px){header .burger{display:block;cursor:pointer}header nav{position:absolute;right:0;top:58px;width:70%!important;background:#fff;padding:0!important;display:none;border:1px solid grey}header nav a{display:block;padding:8px;text-align:center;border-bottom:2px solid #333}header nav a:hover{background:#333;color:#fff}}.bizImg{min-height:210px;background-position:50%;background-size:cover}
+/*# sourceMappingURL=main.2e2b5080.chunk.css.map */

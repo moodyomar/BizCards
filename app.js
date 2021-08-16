@@ -10,7 +10,6 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname,"public")));
 
-//TODO: listen to routes
 // solve the security problem of send payload from another domain
 originAllow(app);
 routerInit(app);
