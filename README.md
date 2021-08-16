@@ -6,7 +6,7 @@ Live website on Netlify: https://macards.netlify.app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Deploying Locally
 
 In the project directory, you can run:
 
