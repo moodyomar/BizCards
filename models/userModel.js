@@ -11,11 +11,16 @@ const userSchema = new mongoose.Schema({
   createdAt: {
     type: Date, default: Date.now()
   },
+
+// save in this cards array all cards that the user made them fav
   cards: Array
 });
 
 exports.UserModel = mongoose.model("users", userSchema);
 
+
+
+// generate token
 exports.getToken = (_userId) => {
   let token = jwt.sign({ _id: _userId }, config.jwtSecret, { expiresIn: "60mins" });
   return token;

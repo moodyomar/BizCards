@@ -11,7 +11,14 @@ exports.authToken = (req,res,next) => {
   }
   try{
     let decodeToken = jwt.verify(validToken,config.jwtSecret);
+
     req.tokenData = decodeToken;
+
+    // assing the variable to req as a prop - req.tokenData
+    // so the next ƒuncs of the route can recive the data
+    // in this sitiuation its gonna be the user id
+    req.tokenData = decodeToken;
+    // all good - can move on to next ƒunc
 
     next();
   }
@@ -22,6 +29,7 @@ exports.authToken = (req,res,next) => {
 }
 
 
+// middleware checks if the user is a business user
 exports.checkIfBiz = async(req, res, next) => {
   try {
     let user = await UserModel.findOne({ _id:req.tokenData._id, biz: true });

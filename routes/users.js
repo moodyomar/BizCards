@@ -44,7 +44,6 @@ router.get("/userCardsFav", authToken , async(req,res) => {
 })
 
 
-
 router.patch("/cards", authToken, async(req,res) => {
   let validBody = validCardsArray(req.body);
   if(validBody.error){
@@ -59,7 +58,6 @@ router.patch("/cards", authToken, async(req,res) => {
     res.status(400).json(err)
   }
 })
-
 
 router.post("/",async(req,res) => {
   let validBody = validUser(req.body);

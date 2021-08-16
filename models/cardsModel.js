@@ -30,7 +30,6 @@ exports.validCard = (_dataBody) => {
   return joiSchema.validate(_dataBody)
 }
 
-
 exports.genBizNumber = async(CardModel) => {
   while(true){
     let randomNum = random(1,999999);
