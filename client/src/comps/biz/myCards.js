@@ -25,7 +25,7 @@ function MyCards(props) {
     if(window.confirm("Are you sure you want to del?")){
       let url = API_URL+ "/cards/"+_id;
       let data = await doApiMethod(url,"DELETE");
-      if(data.n == 1){
+      if(data.n === 1){
         doApi();
         toast.info("Card deleted");
       }

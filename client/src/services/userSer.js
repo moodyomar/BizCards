@@ -68,7 +68,7 @@ export const updateUserAddFavCards = async (_bizCardNumber) => {
 
     let data = await doApiMethod(url, "PATCH", { cards: user.cards });
     // if there is a success ill recive n=1 just like in postman
-    if (data.n == 1) {
+    if (data.n === 1) {
       toast.success("Card is added to favorite")
     }
     return data;
@@ -83,7 +83,7 @@ export const updateUserAddFavCards = async (_bizCardNumber) => {
 // removing a card from favorite
 export const removeUserFavCard = async (_bizCardNumber) => {
   // return to temp_ar all the cards beside the one i want to remove
-  let temp_ar = user.cards.filter(item => item != _bizCardNumber)
+  let temp_ar = user.cards.filter(item => item !== _bizCardNumber)
   user.cards.splice(0, user.cards.length, ...temp_ar);
 
   let url = API_URL + "/users/cards"
@@ -91,7 +91,7 @@ export const removeUserFavCard = async (_bizCardNumber) => {
 
     let data = await doApiMethod(url, "PATCH", { cards: user.cards });
     // if there is a success ill recive n=1 just like in postman
-    if (data.n == 1) {
+    if (data.n === 1) {
       toast.warning("Card removed from favorite")
     }
     return data;

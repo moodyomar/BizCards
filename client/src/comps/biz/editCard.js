@@ -46,7 +46,7 @@ function EditCard(props) {
       let url = API_URL + "/cards/" + props.computedMatch.params.id;
       let data = await doApiMethod(url, "PUT", dataForm);
       console.log(data)
-      if (data.n == 1){
+      if (data.n === 1){
         toast.dark("Card's been updated");
         history.push("/myBizCards");
       }
