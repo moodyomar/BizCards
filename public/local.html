@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = () => {
+      const obj = {
+        model:"koko",
+        age:50
+      }
+
+      // console.log(obj["age"])
+
+
+      init();
+      checkLocal();
+    }
+
+    const checkLocal = () => {
+      // if(localStorage.getItem("username"))
+      // מערך אסוציאטיבי ניתן לפנות לכל מאפיין של כל אובייקט ג'אווה סקריפט
+      // בודק אם קיים קיי בשם יוזרניים בלוקאל 
+      if(localStorage["username"]){
+        // אם קיים נדפיס אותו בספן
+        document.querySelector("#id_span").innerHTML = localStorage["username"];
+      }
+    }
+
+    const init = () => {
+      document.querySelector("#login_btn").addEventListener("click", () => {
+        let user = document.querySelector("#id_input").value;
+        // שומר את המידע בלוקאל ל30 יום בברירת מחדל
+        // ככה שאם גם נחזור שבוע הבא המידע הזה נוכל לשלוף אותו כמו בשורה 26 עד 28
+        localStorage.setItem("username",user);
+        checkLocal();
+      })
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome <span id="id_span">Guest</span> to our site:</h1>
+  <h2>Enter your name:</h2>
+  <input type="text" id='id_input'>
+  <button id="login_btn">Log in</button>
+</body>
+</html>

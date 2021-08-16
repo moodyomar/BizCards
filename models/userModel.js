@@ -11,11 +11,14 @@ const userSchema = new mongoose.Schema({
   createdAt: {
     type: Date, default: Date.now()
   },
-// w'll save in this cards array all cards that the user made them fav
+
+// save in this cards array all cards that the user made them fav
   cards: Array
 });
 
 exports.UserModel = mongoose.model("users", userSchema);
+
+
 
 // generate token
 exports.getToken = (_userId) => {

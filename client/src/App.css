@@ -1,0 +1,29 @@
+:root{
+  --primary: #664DE7;
+  --secondary: #CA91F3;
+  }
+
+  .btn-purple{
+    background-color: var(--primary);
+    color: #fff;
+  }
+  .btn-custom:hover{
+color: #000;
+background-color: #fff;
+  }
+  .btn-custom{
+background-color: #000;
+color: #fff;
+  }
+
+  .hoverScale{
+    transition: all .15s ease-out;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .hoverScale:hover{
+    transform: scale(1.3);
+    transition: all .2s ease-in;
+  }
