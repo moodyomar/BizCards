@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from "react-router-dom"
 import { toast } from "react-toastify";
 import { API_URL, doApiMethod } from '../../services/apiSer';
+import PageHeader from '../common/pageHeader';
+
 
 function AddCard(props) {
 
@@ -34,8 +36,8 @@ function AddCard(props) {
   }
 
   return (
-    <div>
-      <h1>Add new card to your biz:</h1>
+    <div className="p-5">
+      <PageHeader title="Add a new card to your biz" />
       <form onSubmit={handleSubmit(onSubForm)} className="row">
         <div className="col-lg-6">
           <label>*Biz name</label>
