@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './App.css';
-import NavBar from './comps/navbar';
+import NavBar from './comps/common/navbar';
 import Home from './comps/home';
 import About from './comps/about';
 import Page404 from './comps/page404';
@@ -17,6 +17,7 @@ import FavoriteCards from './comps/favoriteCards';
 import MyCards from './comps/biz/myCards';
 import AddCard from './comps/biz/addCard';
 import EditCard from './comps/biz/editCard';
+import ScrollToTop from './comps/common/scrollToTop';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop>
       <header>
         {/*  */}
         {user && <Route path="/" component={NavBar} />}
@@ -63,6 +65,7 @@ function App() {
         <Footer />
       </footer>
       <ToastContainer position="bottom-left" />
+      </ScrollToTop>
     </Router>
   );
 }

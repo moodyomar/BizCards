@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { getUserData, updateUserData } from '../services/userSer';
+import { getUserData, updateUserData } from '../../services/userSer';
 function NavBar(props) {
   let [showMobileNav, setShowMobileNav] = useState(false);
   let [user, setUser] = useState(null)
@@ -26,7 +26,8 @@ function NavBar(props) {
   <div className="topNav container-fluid shadow bg-dark">
     <div className="row align-items-center">
       <div className="logo col-lg-3 d-flex justify-content-between align-items-center">
-        <h2 className="logo">BizUp</h2>
+        <h2 className="logo">Biz<i class="fa fa-arrow-up" aria-hidden="true"></i>
+</h2>
         <div className="burger text-white" onClick={() => {
           setShowMobileNav(!showMobileNav);
         }}>
